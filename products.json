@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "name": "Sansung Galaxy M15",
+    "brand": "Samsung",
+    "image": "https://m.media-amazon.com/images/I/81BTRVfsuFL._SX679_.jpg",
+    "mrp": 16999,
+    "price": 14799,
+    "ram": "6 GB",
+    "internal": "128 GB"
+  },
+  {
+    "id": 2,
+    "name": "Sansung Galaxy M34",
+    "brand": "Samsung",
+    "image": "https://m.media-amazon.com/images/I/91ItZJh1FDL._SX679_.jpg",
+    "mrp": 24499,
+    "price": 14999,
+    "ram": "6 GB",
+    "internal": "128 GB"
+  },
+  {
+    "id": 3,
+    "name": "realme narzo 60X",
+    "brand": "Realme",
+    "image": "https://m.media-amazon.com/image/I/81WimZLWH1L._SX679_.jpg",
+    "mrp": 14999,
+    "price": 18499,
+    "ram": "4 GB",
+    "internal": "128 GB"
+  },
+  {
+    "id": 4,
+    "name": "realme narzo 60",
+    "brand": "Realme",
+    "image": "https://m.media-amazon.com/images/I/8195A49fZbL._SX679_.jpg",
+    "mrp": 19999,
+    "price": 14499,
+    "ram": "8 GB",
+    "internal": "128 GB"
+  },
+  {
+    "id": 5,
+    "name": "OnePlus Nord CE4",
+    "brand": "Oneplus",
+    "image": "https://m.media-amazon.com/images/I/61nxQ62qglL._SX679_.jpg",
+    "mrp": 30000,
+    "price": 26999,
+    "ram": "8 GB",
+    "internal": "256 GB"
+  },
+  {
+    "id": 6,
+    "name": "OnePlus 11R",
+    "brand": "Oneplus",
+    "image": "https://m.media-amazon.com/images/I/61u9zN1HYCL._SX679_.jpg",
+    "mrp": 45000,
+    "price": 32900,
+    "ram": "8 GB",
+    "internal": "128 GB"
+  },
+  {
+    "id": 7,
+    "name": "Redmi 13c",
+    "brand": "Redmi",
+    "image": "https://m.media-amazon.com/images/I/81H7FJtH4SL._SX679_.jpg",
+    "mrp": 18499,
+    "price": 13999,
+    "ram": "4 GB",
+    "internal": "128 GB"
+  },
+  {
+    "id": 8,
+    "name": "Redmi 12",
+    "brand": "Redmi",
+    "image": "https://m.media-amazon.com/images/I/71UIZHHo5hL._SX679_.jpg",
+    "mrp": 15999,
+    "price": 11999,
+    "ram": "4 GB",
+    "internal": "128 GB"
+  }
+]

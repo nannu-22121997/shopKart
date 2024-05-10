@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">ShopKart</a>
+        <button class="btn btn-outline-dark" id="btnCart">
+          <i class="bi bi-cart-fill"></i>cart
+          <span class="badge bg-dark rounded-pill cart-count">0</span>
+        </button>
+      </div>
+    </nav>
+    <header class="bg-primary py-5">
+      <div class="container">
+        <div class="text-center text-white">
+          <h3 class="display-4 fw-semihold">
+            <i class="bi bi-bag"></i>Shopping cart
+          </h3>
+          <p class="lead fw-normal text-white-50">
+            Simple Shopping App in JavaScript
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <section class="py-5">
+      <div class="container mt-5">
+        <div
+          class="row g-4 row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4"
+          id="productsPage"
+        >
+          <!-- <div class="col">
+            <div class="card h-100">
+              <img
+                class="card-img-top"
+                src="https://m.media-amazon.com/images/I/81BTRVfsuFL._SX679_.jpg"
+                alt=""
+              />
+              <div class="card-body p-4">
+                <div class="text-center">
+                  <h5>Redmi 12 5G</h5>
+                  <span class="text-muted"><b>Brand</b>: Redmi</span>
+                  <span class="text-muted d-block"
+                    ><b>Storage</b>: 8GB / 128GB</span
+                  >
+                  <span class="text-muted text-decoration-line-through"
+                    >Rs 15999</span
+                  >
+                  <span class="fw-bold text-success">Rs 11999</span>
+                </div>
+              </div>
+              <div class="card-footer p-4 bg-transparent border-top-0">
+                <div class="text-center">
+                  <button class="btn btn-primary">
+                    <i class="bi bi-cart-fill">Add to Cart</i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100">
+              <img
+                class="card-img-top"
+                src="https://m.media-amazon.com/images/I/81BTRVfsuFL._SX679_.jpg"
+                alt=""
+              />
+              <div class="card-body p-4">
+                <div class="text-center">
+                  <h5>Redmi 12 5G</h5>
+                  <span class="text-muted"><b>Brand</b>: Redmi</span>
+                  <span class="text-muted d-block"
+                    ><b>Storage</b>: 8GB / 128GB</span
+                  >
+                  <span class="text-muted text-decoration-line-through"
+                    >Rs 15999</span
+                  >
+                  <span class="fw-bold text-success">Rs 11999</span>
+                </div>
+              </div>
+              <div class="card-footer p-4 bg-transparent border-top-0">
+                <div class="text-center">
+                  <button class="btn btn-primary">
+                    <i class="bi bi-cart-fill">Add to Cart</i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img
+                class="card-img-top"
+                src="https://m.media-amazon.com/images/I/81BTRVfsuFL._SX679_.jpg"
+                alt=""
+              />
+              <div class="card-body p-4">
+                <div class="text-center">
+                  <h5>Redmi 12 5G</h5>
+                  <span class="text-muted"><b>Brand</b>: Redmi</span>
+                  <span class="text-muted d-block"
+                    ><b>Storage</b>: 8GB / 128GB</span
+                  >
+                  <span class="text-muted text-decoration-line-through"
+                    >Rs 15999</span
+                  >
+                  <span class="fw-bold text-success">Rs 11999</span>
+                </div>
+              </div>
+              <div class="card-footer p-4 bg-transparent border-top-0">
+                <div class="text-center">
+                  <button class="btn btn-primary">
+                    <i class="bi bi-cart-fill">Add to Cart</i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img
+                class="card-img-top"
+                src="https://m.media-amazon.com/images/I/81BTRVfsuFL._SX679_.jpg"
+                alt=""
+              />
+              <div class="card-body p-4">
+                <div class="text-center">
+                  <h5>Redmi 12 5G</h5>
+                  <span class="text-muted"><b>Brand</b>: Redmi</span>
+                  <span class="text-muted d-block"
+                    ><b>Storage</b>: 8GB / 128GB</span
+                  >
+                  <span class="text-muted text-decoration-line-through"
+                    >Rs 15999</span
+                  >
+                  <span class="fw-bold text-success">Rs 11999</span>
+                </div>
+              </div>
+              <div class="card-footer p-4 bg-transparent border-top-0">
+                <div class="text-center">
+                  <button class="btn btn-primary">
+                    <i class="bi bi-cart-fill">Add to Cart</i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img
+                class="card-img-top"
+                src="https://m.media-amazon.com/images/I/81BTRVfsuFL._SX679_.jpg"
+                alt=""
+              />
+              <div class="card-body p-4">
+                <div class="text-center">
+                  <h5>Redmi 12 5G</h5>
+                  <span class="text-muted"><b>Brand</b>: Redmi</span>
+                  <span class="text-muted d-block"
+                    ><b>Storage</b>: 8GB / 128GB</span
+                  >
+                  <span class="text-muted text-decoration-line-through"
+                    >Rs 15999</span
+                  >
+                  <span class="fw-bold text-success">Rs 11999</span>
+                </div>
+              </div>
+              <div class="card-footer p-4 bg-transparent border-top-0">
+                <div class="text-center">
+                  <button class="btn btn-primary">
+                    <i class="bi bi-cart-fill">Add to Cart</i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img
+                class="card-img-top"
+                src="https://m.media-amazon.com/images/I/81BTRVfsuFL._SX679_.jpg"
+                alt=""
+              />
+              <div class="card-body p-4">
+                <div class="text-center">
+                  <h5>Redmi 12 5G</h5>
+                  <span class="text-muted"><b>Brand</b>: Redmi</span>
+                  <span class="text-muted d-block"
+                    ><b>Storage</b>: 8GB / 128GB</span
+                  >
+                  <span class="text-muted text-decoration-line-through"
+                    >Rs 15999</span
+                  >
+                  <span class="fw-bold text-success">Rs 11999</span>
+                </div>
+              </div>
+              <div class="card-footer p-4 bg-transparent border-top-0">
+                <div class="text-center">
+                  <button class="btn btn-primary">
+                    <i class="bi bi-cart-fill">Add to Cart</i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img
+                class="card-img-top"
+                src="https://m.media-amazon.com/images/I/81BTRVfsuFL._SX679_.jpg"
+                alt=""
+              />
+              <div class="card-body p-4">
+                <div class="text-center">
+                  <h5>Redmi 12 5G</h5>
+                  <span class="text-muted"><b>Brand</b>: Redmi</span>
+                  <span class="text-muted d-block"
+                    ><b>Storage</b>: 8GB / 128GB</span
+                  >
+                  <span class="text-muted text-decoration-line-through"
+                    >Rs 15999</span
+                  >
+                  <span class="fw-bold text-success">Rs 11999</span>
+                </div>
+              </div>
+              <div class="card-footer p-4 bg-transparent border-top-0">
+                <div class="text-center">
+                  <button class="btn btn-primary">
+                    <i class="bi bi-cart-fill">Add to Cart</i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img
+                class="card-img-top"
+                src="https://m.media-amazon.com/images/I/81BTRVfsuFL._SX679_.jpg"
+                alt=""
+              />
+              <div class="card-body p-4">
+                <div class="text-center">
+                  <h5>Redmi 12 5G</h5>
+                  <span class="text-muted"><b>Brand</b>: Redmi</span>
+                  <span class="text-muted d-block"
+                    ><b>Storage</b>: 8GB / 128GB</span
+                  >
+                  <span class="text-muted text-decoration-line-through"
+                    >Rs 15999</span
+                  >
+                  <span class="fw-bold text-success">Rs 11999</span>
+                </div>
+              </div>
+              <div class="card-footer p-4 bg-transparent border-top-0">
+                <div class="text-center">
+                  <button class="btn btn-primary">
+                    <i class="bi bi-cart-fill">Add to Cart</i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img
+                class="card-img-top"
+                src="https://m.media-amazon.com/images/I/81BTRVfsuFL._SX679_.jpg"
+                alt=""
+              />
+              <div class="card-body p-4">
+                <div class="text-center">
+                  <h5>Redmi 12 5G</h5>
+                  <span class="text-muted"><b>Brand</b>: Redmi</span>
+                  <span class="text-muted d-block"
+                    ><b>Storage</b>: 8GB / 128GB</span
+                  >
+                  <span class="text-muted text-decoration-line-through"
+                    >Rs 15999</span
+                  >
+                  <span class="fw-bold text-success">Rs 11999</span>
+                </div>
+              </div>
+              <div class="card-footer p-4 bg-transparent border-top-0">
+                <div class="text-center">
+                  <button class="btn btn-primary">
+                    <i class="bi bi-cart-fill">Add to Cart</i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img
+                class="card-img-top"
+                src="https://m.media-amazon.com/images/I/81BTRVfsuFL._SX679_.jpg"
+                alt=""
+              />
+              <div class="card-body p-4">
+                <div class="text-center">
+                  <h5>Redmi 12 5G</h5>
+                  <span class="text-muted"><b>Brand</b>: Redmi</span>
+                  <span class="text-muted d-block"
+                    ><b>Storage</b>: 8GB / 128GB</span
+                  >
+                  <span class="text-muted text-decoration-line-through"
+                    >Rs 15999</span
+                  >
+                  <span class="fw-bold text-success">Rs 11999</span>
+                </div>
+              </div>
+              <div class="card-footer p-4 bg-transparent border-top-0">
+                <div class="text-center">
+                  <button class="btn btn-primary">
+                    <i class="bi bi-cart-fill">Add to Cart</i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img
+                class="card-img-top"
+                src="https://m.media-amazon.com/images/I/81BTRVfsuFL._SX679_.jpg"
+                alt=""
+              />
+              <div class="card-body p-4">
+                <div class="text-center">
+                  <h5>Redmi 12 5G</h5>
+                  <span class="text-muted"><b>Brand</b>: Redmi</span>
+                  <span class="text-muted d-block"
+                    ><b>Storage</b>: 8GB / 128GB</span
+                  >
+                  <span class="text-muted text-decoration-line-through"
+                    >Rs 15999</span
+                  >
+                  <span class="fw-bold text-success">Rs 11999</span>
+                </div>
+              </div>
+              <div class="card-footer p-4 bg-transparent border-top-0">
+                <div class="text-center">
+                  <button class="btn btn-primary">
+                    <i class="bi bi-cart-fill">Add to Cart</i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-primary py-5 text-white text-center">
+      <p>Copyright &copy; ShopKart 2024</p>
+    </footer>
+    <div class="modal" id="myModal">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title text-primary text-uppercase">Cart Items</h4>
+            <button class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Image</th>
+                  <th>Name</th>
+                  <th>Rate</th>
+                  <th>Quality</th>
+                  <th>Amount</th>
+                  <th>Remove</th>
+                </tr>
+              </thead>
+              <tbody id="tbody"></tbody>
+              <tfoot>
+                <tr>
+                  <th class="text-end total" colspan="5">Total Rs: 0.00</th>
+                </tr>
+                <tr>
+                  <th class="text-center">
+                    <!-- Checkout button -->
+                    <button id="checkoutBtn" class="btn btn-success">
+                      Checkout
+                    </button>
+                  </th>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+    <script src="sever.js"></script>
+  </body>
+</html>
